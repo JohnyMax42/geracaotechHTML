@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table, th, tr, td{
+        table, th, tr, td, form{
             border: 1px solid black;
+            border-collapse: collapse;
         }
     </style>
 </head>
@@ -104,6 +105,80 @@
         </tr>
 
     </table>
+
+    <h2>Apresentação de Formularios</h2>
+
+    <form action="#">
+
+        <label for="meuID">
+            Rótulo da informação a ser inserida
+        </label>
+        <br>
+        <input type="text" id="meuID">
+        
+        <br>
+
+        <label for="numero">
+            Rótulo para número
+        </label>
+        <br>
+        <input type="number" id="numero" value="1000">
+        
+        <br>
+
+        <label for="email">
+            Rótulo para email
+        </label>
+        <br>
+        <input type="email" name="" id="email" placeholder="exemplo@email.com">
+
+        <br>
+
+        <label for="senha">
+            Rótulo para senha
+        </label>
+        <br>
+        <input type="password" name="" id="senha">
+
+        <br>
+
+        <label for="">
+            Exemplo checkbox
+        </label>
+        <br>
+        <input type="checkbox" name="selecao" id="f" value="LojaFeminino">
+        <label for="f">Loja Departamento Feminino</label>
+
+        <input type="checkbox" name="selecao" id="m">
+        <label for="m">Loja Departamento Masculino</label>
+        <br>
+
+        <label for="">Exemplo de seleção única</label>
+        <br>
+        <input type="radio" name="selecaoUnica" id="um" value="1">
+        <label for="um">Um</label>
+        <input type="radio" name="selecaoUnica" id="dois" value="2">
+        <label for="dois">Dois</label>
+
+        <br>
+
+        <label for="testeSelect">Seleção por lista</label>
+        <br>
+        <select name="testeSelect" id="testeSelect">
+            <option value="1" disabled>um</option>
+            <option value="2">dois</option>
+            <option value="3">três</option>
+        </select>
+
+         <br>
+
+         <label for="textoLongo">Caixa de texto longo</label>
+         <br>
+         <textarea name="" id="textoLongo" cols="20" rows="5" placeholder="sua reclamação aqui"></textarea>
+
+    </form>
+
+    <br><br><br>
 
 </body>
 </html>
